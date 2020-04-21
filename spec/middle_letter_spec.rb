@@ -22,6 +22,11 @@ describe MiddleLetter do
       expect(subject.
         get_middle(word)).to eq("dd")
     end
+
+    it 'gives the middle letter if word is even' do
+      word = "of"
+      expect(subject.get_middle(word)).to eq("of")
+    end
   end 
 end 
 
