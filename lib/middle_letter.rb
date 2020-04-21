@@ -1,5 +1,7 @@
 class MiddleLetter
   def get_middle(word)
-    "t"
+    if word.length.odd?
+      return word[word.length/2]
+    end 
   end
 end
