@@ -1,14 +1,12 @@
 require 'middle_letter'
 
 describe MiddleLetter do
-it 'checks a class exists' do
-  expect(subject).to be_a MiddleLetter
-end
+  describe '#get_middle' do 
+    it 'gives the middle letter if word is odd' do
+      word = "testing"
+      expect(subject.get_middle(word)).to eq("t")
+    end 
+  end 
+end 
 
-it 'checks the class responds to the method' do
-  expect(subject).to respond_to :get_middle
-end
 
-it {should respond_to(:get_middle).with(1).argument}
-
-end
